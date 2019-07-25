@@ -7,10 +7,11 @@ Download Cifar100 dataset from https://www.cs.toronto.edu/~kriz/cifar-100-python
 Put meta, train, test into ./cifar100
 
 # Train
+```
 python main.py
+```
 
-
-Result
+# Result
 
 |    |  20  |  40  |  60  |  80  |  100  |
 | ---- | ---- | ---- | ---- | ---- | ---- |
