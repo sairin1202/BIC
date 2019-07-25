@@ -8,3 +8,11 @@ Put meta, train, test into ./cifar100
 
 # Train
 python main.py
+
+
+Result
+
+|    |  20  |  40  |  60  |  80  |  100  |
+| ---- | ---- | ---- | ---- | ---- | ---- |
+|  Paper  | 85.20 | 74.59 | 66.76 | 60.14 | 55.55 |
+|  Implementation  | 83.00 | 69.90 | 63.08 | 57.11 | 53.7 |
