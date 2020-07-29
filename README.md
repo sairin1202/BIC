@@ -1,5 +1,5 @@
 # BIC
-pytorch implementation of "Large Scale Incremental Learning" from https://arxiv.org/abs/1905.13260
+An unofficial pytorch implementation of "Large Scale Incremental Learning" from https://arxiv.org/abs/1905.13260
 
 # Dataset
 Download Cifar100 dataset from https://www.cs.toronto.edu/~kriz/cifar-100-python.tar.gz
