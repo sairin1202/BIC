@@ -20,7 +20,7 @@ import json
 import pickle
 from dataset import BatchData
 from model import PreResNet, BiasLayer
-from cifar100 import Cifar100
+from cifar import Cifar100
 from exemplar import Exemplar
 from copy import deepcopy
 
