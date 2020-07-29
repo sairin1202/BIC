@@ -162,6 +162,8 @@ class Trainer:
                 cur_lr = self.get_lr(optimizer)
                 print("Current Learning Rate : ", cur_lr)
                 self.model.train()
+                for _ in range(len(self.bias_layers)):
+                    self.bias_layers[_].eval()
                 if inc_i > 0:
                     self.stage1_distill(train_data, criterion, optimizer)
                 else:
@@ -170,6 +172,9 @@ class Trainer:
             if inc_i > 0:
                 for epoch in range(epoches):
                     # bias_scheduler.step()
+                    self.model.eval()
+                    for _ in range(len(self.bias_layers)):
+                        self.bias_layers[_].train()
                     self.stage2(val_bias_data, criterion, bias_optimizer)
                     if epoch % 50 == 0:
                         acc = self.test(test_data)
